@@ -13,11 +13,12 @@ unitTest(calculateSum('1122'), 3);
 unitTest(calculateSum('1111'), 4);
 unitTest(calculateSum('1234'), 0);
 
-console.log(toMD5(
-    loadInputFile('input.txt')
-        .split('\n')
-        .map(l => calculateSum(l))
-        .map(l => l.toString() + '\n')
-        .join('')
-));
+console.log(
+    toMD5(
+        loadInputFile('input.txt')
+            .split('\n')
+            .map(calculateSum)
+            .map(l => l.toString() + '\n')
+            .join(''))
+);
 
