@@ -21,4 +21,3 @@ console.log(
             .map(l => l.toString() + '\n')
             .join(''))
 );
-
