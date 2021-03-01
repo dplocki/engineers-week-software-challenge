@@ -1,0 +1,1 @@
+{"fred":{"name":"Puck","magnitude":19.75,"planet":{"name":"Uranus","numberOfMoons":27}},"barney":{"name":"Pan","radius":14.1,"albedo":0.5,"planet":{"name":"Saturn","gravity":9.0001}},"wilma":{"name":"Kerberos","density":1.4,"albedo":0.35,"planet":{"name":"Pluto","meanTemperature":-225.0001}}}

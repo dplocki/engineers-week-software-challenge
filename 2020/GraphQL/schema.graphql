@@ -1,0 +1,41 @@
+type Query {
+    planets: [Planet!]!
+    planet(id: ID): Planet!
+    satellites(planet: ID): [Satellite!]!
+    satellite(id: ID): Satellite!
+}
+type Planet {
+    id: ID!
+    name: String!
+    mass: Float!
+    diameter: Float!
+    density: Float!
+    gravity: Float!
+    escapeVelocity: Float!
+    rotationPeriod: Float!
+    lengthOfDay: Float!
+    distanceFromSun: Float!
+    perihelion: Float!
+    aphelion: Float!
+    orbitalPeriod: Float!
+    orbitalVelocity: Float!
+    orbitalInclination: Float!
+    orbitalEccentricity: Float!
+    obliquityToOrbit: Float!
+    meanTemperature: Float!
+    surfacePressure: Float
+    numberOfMoons: Int!
+    hasRingSystem: Boolean!
+    hasGlobalMagneticField: Boolean!
+    satellites: [Satellite!]
+}
+type Satellite {
+    id: ID!
+    name: String!
+    gm: Float!
+    radius: Float!
+    density: Float
+    magnitude: Float
+    albedo: Float
+    planet: Planet!
+}

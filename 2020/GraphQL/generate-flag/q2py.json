@@ -1,0 +1,1 @@
+{"mars":{"name":"Mars","gravity":3.7,"distanceFromSun":227.9,"satellites":[{"name":"Phobos","density":1.872},{"name":"Deimos","density":1.471}]},"earth":{"name":"Earth","gravity":9.8,"mass":5.97,"satellites":[{"name":"Moon","magnitude":-12.74}]}}
