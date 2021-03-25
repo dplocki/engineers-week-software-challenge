@@ -12,8 +12,8 @@ exports.toMD5 = (value) => {
         .digest('hex');
 }
 
-exports.unitTest = (expected, recived) => {
-    assert.strictEqual(expected, recived, `Excepted: "${expected}, result: ${recived}`);
+exports.unitTest = (expected, received) => {
+    assert.strictEqual(expected, received, `Excepted: "${expected}, result: ${received}`);
 }
 
 exports.loadInputFile = (name) => {
