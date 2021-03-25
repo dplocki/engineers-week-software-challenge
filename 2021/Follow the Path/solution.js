@@ -96,4 +96,4 @@ unitTest(
     followPath(buildMap(testInput)),
     'ABCDEF');
 
-console.log(followPath(buildMap(loadInputFile('input.txt'))));
+console.log('Solution for problem:', followPath(buildMap(loadInputFile('input.txt'))));
