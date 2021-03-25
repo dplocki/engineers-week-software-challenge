@@ -10,7 +10,7 @@ To calculate each generator's first value, it instead uses a specific starting v
 
 For example, suppose that for starting values, generator A uses 65, while generator B uses 8921. Then, the first five pairs of generated values are:
 
-```
+```txt
 --Gen. A--  --Gen. B--
    1092455   430625591
 1181022009  1233683848

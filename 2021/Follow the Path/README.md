@@ -6,7 +6,7 @@ Its starting point is just off the top of the diagram. Lines (drawn with |, -, a
 
 Sometimes, the lines cross over each other; in these cases, it needs to continue going the same direction, and only turn left or right when there's no other option. In addition, someone has left letters on the line; these also don't change its direction, but it can use them to keep track of where it's been. For example:
 
-```
+```txt
      |          
      |  +--+    
      A  |  C    
