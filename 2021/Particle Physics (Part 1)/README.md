@@ -17,7 +17,7 @@ Because of seemingly tenuous rationale involving z-buffering, the GPU would like
 
 For example, suppose you are only given two particles, both of which stay entirely on the X-axis (for simplicity). Drawing the current states of particles 0 and 1 (in that order) with an adjacent a number line and diagram of current X positions (marked in parentheses), the following would take place:
 
-```
+```txt
 p=< 3,0,0>, v=< 2,0,0>, a=<-1,0,0>    -4 -3 -2 -1  0  1  2  3  4
 p=< 4,0,0>, v=< 0,0,0>, a=<-2,0,0>                         (0)(1)
 
@@ -36,4 +36,5 @@ At this point, particle 1 will never be closer to <0,0,0> than particle 0, and s
 Which particle will stay closest to position <0,0,0> in the long term?
 
 ## Flag
+
 You may enter the particle number as the flag or the Md5 hash of an output file containing the particle number followed by a newline.
