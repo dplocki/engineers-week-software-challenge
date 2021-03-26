@@ -2,38 +2,39 @@ const { loadInputFile } = require('../common');
 
 const LONG_RUN = 1024;
 const pattern = /^p=\<(-?\d+),(-?\d+),(-?\d+)\>, v=\<(-?\d+),(-?\d+),(-?\d+)\>, a=\<(-?\d+),(-?\d+),(-?\d+)\>$/;
-const particules = loadInputFile('input.txt')
-    .split('\n')
+const particles = loadInputFile('input.txt')
+    .split(/\r?\n/)
     .map(line => line.match(pattern))
     .map((group, index) => ({
         index: index,
-        positionX: parseInt(group[1]),
-        positionY: parseInt(group[2]),
-        positionZ: parseInt(group[3]),
+        positionX: parseInt(group[1], 10),
+        positionY: parseInt(group[2], 10),
+        positionZ: parseInt(group[3], 10),
 
-        velocityX: parseInt(group[4]),
-        velocityY: parseInt(group[5]),
-        velocityZ: parseInt(group[6]),
+        velocityX: parseInt(group[4], 10),
+        velocityY: parseInt(group[5], 10),
+        velocityZ: parseInt(group[6], 10),
 
-        accelerationX: parseInt(group[7]),
-        accelerationY: parseInt(group[8]),
-        accelerationZ: parseInt(group[9])
-  }));
+        accelerationX: parseInt(group[7], 10),
+        accelerationY: parseInt(group[8], 10),
+        accelerationZ: parseInt(group[9], 10)
+    }));
 
 for(let i = 0; i < LONG_RUN; i++) {
-    for(const particule in particules) {
-        particule.velocityX += particule.accelerationX;
-        particule.velocityY += particule.accelerationY;
-        particule.velocityZ += particule.accelerationZ;
+    for(const particle of particles) {
+        particle.velocityX += particle.accelerationX;
+        particle.positionX += particle.velocityX;
 
-        particule.positionX += particule.velocityX;
-        particule.positionY += particule.velocityY;
-        particule.positionZ += particule.velocityZ;
+        particle.velocityY += particle.accelerationY;
+        particle.positionY += particle.velocityY;
+
+        particle.velocityZ += particle.accelerationZ;
+        particle.positionZ += particle.velocityZ;
     }
 }
 
-const theClosestParticle = particules
+const theClosestParticle = particles
     .map(p => ({ index: p.index, distance: Math.abs(p.positionX) + Math.abs(p.positionY) + Math.abs(p.positionZ) }))
-    .reduce((m, p) => (m.distance > p.distance) ? m : p);
+    .reduce((m, p) => (m.distance > p.distance) ? p : m);
 
-console.log(theClosestParticle.index);
+console.log('Solution for the task:', theClosestParticle.index);
