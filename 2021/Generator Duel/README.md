@@ -21,6 +21,7 @@ For example, suppose that for starting values, generator A uses 65, while genera
 
 In binary, these pairs are (with generator A's value first in each pair):
 
+```txt
 00000000000100001010101101100111
 00011001101010101101001100110111
 
@@ -35,6 +36,7 @@ In binary, these pairs are (with generator A's value first in each pair):
 
 01010000100111111001100000100100
 00010001000000000010100000000100
+```
 
 Here, you can see that the lowest (here, rightmost) 16 bits of the third value match: 1110001101001010. Because of this one match, after processing these five pairs, the judge would have added only 1 to its total.
 
