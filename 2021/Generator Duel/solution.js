@@ -1,4 +1,4 @@
-const { loadInputFile, unitTest } = require("../common");
+const { loadInputFile, unitTest, toLines } = require("../common");
 
 const VALUE_LIMIT = 2147483647;
 const FIRST_GENERATOR_FACTOR = 16807;
@@ -6,7 +6,7 @@ const SECOND_GENERATOR_FACTOR = 48271;
 const _16bit = Math.pow(2, 16);
 
 function parseInput(input) {
-    return input.split(/\r?\n/)
+    return toLines(input)
         .map(s => s.split(' '))
         .map(s => s[s.length - 1])
         .map(s => parseInt(s, 10));

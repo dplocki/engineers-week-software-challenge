@@ -1,7 +1,7 @@
-const { loadInputFile } = require("../common");
+const { loadInputFile, toLines } = require("../common");
 
 function parseProgram(input) {
-    return input.split(/\r?\n/)
+    return toLines(input)
         .map(l => l
             .split(' ')
             .map(s => s.match(/-?\d+/) ? parseInt(s, 10) : s)

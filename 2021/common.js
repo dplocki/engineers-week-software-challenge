@@ -21,3 +21,5 @@ exports.loadInputFile = (name) => {
         .readFileSync(name)
         .toString();
 }
+
+exports.toLines = (v) => v.split(/\r?\n/);

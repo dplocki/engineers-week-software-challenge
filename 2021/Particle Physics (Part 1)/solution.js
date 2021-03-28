@@ -1,9 +1,8 @@
-const { loadInputFile } = require('../common');
+const { loadInputFile, toLines } = require('../common');
 
 const LONG_RUN = 1024;
 const pattern = /^p=\<(-?\d+),(-?\d+),(-?\d+)\>, v=\<(-?\d+),(-?\d+),(-?\d+)\>, a=\<(-?\d+),(-?\d+),(-?\d+)\>$/;
-const particles = loadInputFile('input.txt')
-    .split(/\r?\n/)
+const particles = toLines(loadInputFile('input.txt'))
     .map(line => line.match(pattern))
     .map((group, index) => ({
         index: index,
