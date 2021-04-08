@@ -8,7 +8,7 @@ Solution for Engineers Week Software Challenge. Written in JavaScript.
 
 |Name | Input | Solution |
 |-----|-------|----------|
-|[ASCII Art](./2021/ASCII%20Art/README.md)|[input.txt](./2021/ASCII%20Art/input.txt)| |
+|[ASCII Art](./2021/ASCII%20Art/README.md)|[input.txt](./2021/ASCII%20Art/input.txt)|[solution.js](./2021/ASCII%20Art/solution.js)||
 |[Follow the Path](./2021/Follow%20the%20Path/README.md)|[input.txt](./2021/Follow%20the%20Path/input.txt)|[solution.js](./2021/Follow%20the%20Path/solution.js)|
 |[Generator Duel](./2021/Generator%20Duel/README.md)|[input.txt](./2021/Generator%20Duel/input.txt)|[solution.js](./2021/Generator%20Duel/solution.js)|
 |[Hello MD5](./2021/Hello%20MD5/README.md)|[input.txt](./2021/Hello%20MD5/input.txt)|[solution.js](./2021/Hello%20MD5/solution.js)|
