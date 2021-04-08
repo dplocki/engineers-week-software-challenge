@@ -49,27 +49,49 @@ function image(baseImage) {
                         result.push(tmp);
                     }
 
-                    yield result;
+                    yield [row, column, result];
                 }
             }
-        }
+        },
+        getSingleLine: () => result.join('')
     };
 }
 
+function buildNewPicture(baseImageWrapper, sizeOfSubPicture) {
+    const newPicture = [];
+
+    for(const [row, column, subPicture] of baseImageWrapper.getSubPicture(sizeOfSubPicture)) {
+        const newSubPicture = mappings[subPicture.join('')].split('/');
+        const newSubPictureSize = newSubPicture.length;
+
+        for(let i = 0; i < newSubPictureSize; i++) {
+            if (column === 0) {
+                newPicture.push('');
+            }
+
+            newPicture[row * newSubPictureSize + i] += newSubPicture[i];
+        }
+    }
+
+    return newPicture;
+} 
+
 const mappings = toLines(loadInputFile('input.txt'))
-    .map(l => l.split(' => ').map(s => s.replace(/\//g, '')))
+    .map(l => l.split(' => '))
+    .map(l => [l[0].replace(/\//g, ''), l[1]])
     .reduce((result, l) => {
+        const rotateCount = 4;
         const [key, value] = l;
         const size = (key.length === 4) ? 2 : 3;
         let image = key;
 
-        for(let i = 0; i < 4; i++) {
+        for(let i = 0; i < rotateCount; i++) {
             result[image] = value;
             image = rotate90(image, size);
         }
 
-        image = vertical(key);
-        for(let i = 0; i < 4; i++) {
+        image = vertical(key, size);
+        for(let i = 0; i < rotateCount; i++) {
             result[image] = value;
             image = rotate90(image, size);
         }
@@ -77,17 +99,14 @@ const mappings = toLines(loadInputFile('input.txt'))
         return result;
     }, {});
 
-const baseImageWrapper = image([
+let baseImageWrapper = image([
     '.#.',
     '..#',
     '###'
 ]);
 
-console.log(Array.from(baseImageWrapper.getSubPicture(3)));
-// for(let step = 0; step < 18; step++) {
-//     if (s.isDiv2()) {
+for(let step = 0; step < 18; step++) {
+    baseImageWrapper = image(buildNewPicture(baseImageWrapper, baseImageWrapper.isDiv2() ? 2 : 3));
+}
 
-//     } else {
-
-//     }
-// }
+console.log('Solution is:', baseImageWrapper.getSingleLine().replace(/[^#]/g, '').length);
