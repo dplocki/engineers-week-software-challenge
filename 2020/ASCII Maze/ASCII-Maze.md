@@ -7,10 +7,10 @@ Find the path through the maze between the top-left cell and the bottom right ce
 Output the sum of all of the numbers along the solution path.
 
 ## Example Maze
+
 *Disclaimer*: The example maze in the challenge is much smaller than the challenge maze
 
-
-```
+```txt
 +   +---+---+---+---+---+---+---+---+---+
 | 4   3   3 | 8   7   6   6 | 8   2   4 |
 +---+---+   +---+   +---+---+   +---+   +
@@ -36,7 +36,7 @@ Output the sum of all of the numbers along the solution path.
 
 ## Solution
 
-```
+```txt
 +   +---+---+---+---+---+---+---+---+---+
 | 4   3   3 |               |           |
 +---+---+   +---+   +---+---+   +---+   +
@@ -62,11 +62,10 @@ Output the sum of all of the numbers along the solution path.
 
 ## Output
 
-```
+```text
 201
 
 ```
-
 
 ## Flag
 
@@ -74,12 +73,13 @@ Compute the md5 checksum of the output file. Make sure the output file contains 
 
 For the example output above, the flag is:
 
-```
+```text
 9417bd061f365a7b4bd13783c878de86
 ```
 
 ## Answer and Flags
-```
+
+```text
 Flags:
 2cadff59aa994dfc39c96660d37fc932 // UTF-8 LF
 5268872d87366a3382a79d2356fce06b // UTF-8 CRLF
