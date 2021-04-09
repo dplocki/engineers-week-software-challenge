@@ -17,3 +17,14 @@ Solution for Engineers Week Software Challenge. Written in JavaScript.
 |[Particle Physics (Part 1)](./2021/Particle%20Physics%20(Part%201)/README.md)|[input.txt](./2021/Particle%20Physics%20(Part%201)/input.txt)|[solution.js](./2021/Particle%20Physics%20(Part%201)/solution.js)|
 |[Spinlock](./2021/Spinlock/README.md)|`376`|[solution.js](./2021/Spinlock/solution.js)|
 |[State Challenge](./2021/State%20Challenge/README.md)|[input.txt](./2021/State%20Challenge/input.txt)|[solution.js](./2021/State%20Challenge/solution.js)|
+
+### 2020
+
+|Name | Input | Solution |
+|-----|-------|----------|
+|[ASCII Maze](./2020/ASCII%20Maze/ASCII-Maze.md)|[maze.txt](./2021/ASCII%20Art/maze.txt)||
+|[Dictionary Inclusion](./2020/Dictionary%20Inclusion/Dictionary-inclusion.md)|[words.txt](./2021/ASCII%20Art/words.txt)||
+|[GraphQL](./2020/GraphQL/README.md)|||
+|[HelloMd5](./2020/HelloMd5/HelloMd5.md)|[input.txt](./2021/HelloMd5/maze.txt)||
+|[Money Math](./2020/Money%20Math/money-math.md)|[trails.txt](./2021/Money%20Math/trails.txt)||
+|[Natural Numbers](./2020/Natural%20Numbers/money-math.md)|[trails.txt](./2021/Natural%20Numbers/trails.txt)||
