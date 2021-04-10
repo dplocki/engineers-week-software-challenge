@@ -42,7 +42,7 @@ const getValueOfPath = () => {
         const newValue = value + getValueOnPosition(...point);
 
         for(newPoint of getNeighbors(...point)) {
-            if (newPoint[ROW] == previousPoint[ROW] && newPoint[COLUMN] == previousPoint[COLUMN]) {
+            if (newPoint[ROW] === previousPoint[ROW] && newPoint[COLUMN] === previousPoint[COLUMN]) {
                 continue;
             }
 

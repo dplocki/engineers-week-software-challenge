@@ -22,8 +22,8 @@ Solution for Engineers Week Software Challenge. Written in JavaScript.
 
 |Name | Input | Solution |
 |-----|-------|----------|
-|[ASCII Maze](./2020/ASCII%20Maze/ASCII-Maze.md)|[maze.txt](./2021/ASCII%20Art/maze.txt)||
-|[Dictionary Inclusion](./2020/Dictionary%20Inclusion/Dictionary-inclusion.md)|[words.txt](./2021/ASCII%20Art/words.txt)||
+|[ASCII Maze](./2020/ASCII%20Maze/ASCII-Maze.md)|[maze.txt](./2020/ASCII%20Maze/maze.txt)|[solution.js](./2020/ASCII%20Maze/solution.js)|
+|[Dictionary Inclusion](./2020/Dictionary%20Inclusion/Dictionary-inclusion.md)|[words.txt](./2020/Dictionary%20Inclusion/words.txt)||
 |[GraphQL](./2020/GraphQL/README.md)|||
 |[HelloMd5](./2020/HelloMd5/HelloMd5.md)|[input.txt](./2021/HelloMd5/maze.txt)||
 |[Money Math](./2020/Money%20Math/money-math.md)|[trails.txt](./2021/Money%20Math/trails.txt)||
