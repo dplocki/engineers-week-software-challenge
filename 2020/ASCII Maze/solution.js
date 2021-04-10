@@ -31,7 +31,7 @@ const getNeighbors = (row, column) => {
 
 const getValueOfPath = () => {
     const startPoint = [1, 2];
-    const possibilities = [ [startPoint, getNeighbors(...startPoint)[0], getValueOnPosition(...startPoint)] ];
+    const possibilities = [ [startPoint, getNeighbors(...startPoint)[0], 0] ];
     
     while (possibilities.length > 0) {
         const [point, previousPoint, value] = possibilities.pop();
