@@ -1,4 +1,4 @@
-const { loadInputFile, toLines } = require("../common");
+const { loadInputFile, toLines } = require("../../utils/common");
 
 function parseProgram(input) {
     return toLines(input)

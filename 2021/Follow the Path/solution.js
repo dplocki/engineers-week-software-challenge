@@ -1,4 +1,4 @@
-const { unitTest, loadInputFile } = require("../common");
+const { unitTest, loadInputFile } = require("../../utils/common");
 
 function buildMap(input) {
     const lines = input.split('\n');

@@ -1,4 +1,4 @@
-const { unitTest } = require("../common");
+const { unitTest } = require("../../utils/common");
 
 function buildVortexInsert(input) {
     const vortex = { 0: 0 };

@@ -1,4 +1,4 @@
-const { unitTest, loadInputFile, toMD5 } = require("../common");
+const { unitTest, loadInputFile, toMD5 } = require("../../utils/common");
 
 function calculateSum(number) {
     const digitsCount = number.length;

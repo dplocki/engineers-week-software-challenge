@@ -1,4 +1,4 @@
-const { loadInputFile, toLines } = require('../common');
+const { loadInputFile, toLines } = require("../../utils/common");
 
 const LONG_RUN = 1024;
 const pattern = /^p=\<(-?\d+),(-?\d+),(-?\d+)\>, v=\<(-?\d+),(-?\d+),(-?\d+)\>, a=\<(-?\d+),(-?\d+),(-?\d+)\>$/;

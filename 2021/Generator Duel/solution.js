@@ -1,4 +1,4 @@
-const { loadInputFile, unitTest, toLines } = require("../common");
+const { loadInputFile, unitTest, toLines } = require("../../utils/common");
 
 const VALUE_LIMIT = 2147483647;
 const FIRST_GENERATOR_FACTOR = 16807;

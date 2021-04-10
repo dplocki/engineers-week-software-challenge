@@ -1,4 +1,4 @@
-const { loadInputFile, toLines } = require("../common");
+const { loadInputFile, toLines } = require("../../utils/common");
 
 function rotate90(original, size) {
     let result = Array.from(original);

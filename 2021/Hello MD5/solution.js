@@ -1,4 +1,4 @@
-const { loadInputFile, pipe, unitTest, toMD5 } = require('../common');
+const { loadInputFile, pipe, unitTest, toMD5 } = require("../../utils/common");
 
 function solution(input) {
     return input
