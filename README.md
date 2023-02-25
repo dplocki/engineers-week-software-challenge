@@ -4,6 +4,12 @@ Solution for Engineers Week Software Challenge. Written in JavaScript.
 
 ## Tasks
 
+## 2023
+
+|Name | Input | Solution |
+|-----|-------|----------|
+|Fibonacci|-|[solution.js](./2023/fibonacci/solution.js)|
+
 ### 2021
 
 |Name | Input | Solution |
