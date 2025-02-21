@@ -1,0 +1,14 @@
+BALANCE 10
+PRICE sword 4
+PRICE shield 7
+PURCHASE sword 1
+SET_AVAILABLE sword 2
+PURCHASE sword 1
+PURCHASE sword 1
+PURCHASE sword 1
+SET_AVAILABLE sword 7
+PRICE sword 2
+PURCHASE sword 100
+PRICE sword 3
+SELL sword
+SELL sword
