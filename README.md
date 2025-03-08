@@ -4,6 +4,12 @@ Solution for Engineers Week Software Challenge. Written in JavaScript.
 
 ## Tasks
 
+## 2024
+
+|Name | Input | Solution |
+|-----|-------|----------|
+|[Branching Structures 1](./2024/Branching%20Structures%201/README.md)|-|[solution.js](./2023/fibonacci/solution.js)|
+
 ## 2023
 
 |Name | Input | Solution |
